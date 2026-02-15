@@ -95,7 +95,9 @@ config = {
 python seeder.py
 
 📁 Estrutura de Arquivos
+
 text
+
 /
 
 ├── scheme.sql          # Script de criação do banco e gatilhos
