@@ -62,31 +62,42 @@ O sistema possui 4 gatilhos automatizados:
 ### Instalação
 
 1. **Clone o repositório**
+
 git clone https://github.com/Polyalves2/atividade2-BD-Avancado.git
 
-Crie o banco de dados e os gatilhos
+2. **Crie o banco de dados e os gatilhos**
+   
 mysql -u root -p 
 
-Instale o conector MySQL para Python
+3. **Instale o conector MySQL para Python**
+   
 pip install mysql-connector-python
 
-Configure a senha no seeder.py
+4. **Configure a senha no seeder.py**
 
 python
 # No arquivo seeder.py, altere para sua senha do MySQL
+
 config = {
+
     'host': 'localhost',
+    
     'user': 'root',
+    
     'password': 'SUA_SENHA_AQUI',
+    
     'database': 'blog_system'
+    
 }
 
-Execute o script de população
+5. **Execute o script de população**
+   
 python seeder.py
 
 📁 Estrutura de Arquivos
 text
 /
+
 ├── scheme.sql          # Script de criação do banco e gatilhos
 
 ├── seeder.py           # Script para popular o banco com dados de exemplo
@@ -96,6 +107,7 @@ text
 └── mysql-reset.sql     # (opcional) Script para resetar senha do MySQL
 
 🎯 Objetivo do Projeto
+
 Este projeto foi desenvolvido para demonstrar:
 
 Criação de gatilhos no MySQL
