@@ -3,7 +3,7 @@ Projeto de um sistema simples de blog desenvolvido para demonstrar o uso de **ga
 
 ## 📋 Estrutura do Banco de Dados
 
-### Tabelas
+## Tabelas
 
 - **users** - Armazena os usuários do blog
   - `id`: Identificador único
@@ -59,7 +59,7 @@ O sistema possui 4 gatilhos automatizados:
 - Python 3.9+
 - pip (gerenciador de pacotes Python)
 
-### Instalação
+## Instalação
 
 1. **Clone o repositório**
 
@@ -73,10 +73,15 @@ mysql -u root -p
    
 pip install mysql-connector-python
 
-4. **Configure a senha no seeder.py**
+4. **Execute o script de população**
+   
+python seeder.py
+
+5. **Configure a senha no seeder.py**
 
 python
-# No arquivo seeder.py, altere para sua senha do MySQL
+
+**No arquivo seeder.py, altere para sua senha do MySQL**
 
 config = {
 
@@ -90,11 +95,7 @@ config = {
     
 }
 
-5. **Execute o script de população**
-   
-python seeder.py
-
-📁 Estrutura de Arquivos
+## 📁 Estrutura de Arquivos
 
 text
 
@@ -108,7 +109,7 @@ text
 
 └── mysql-reset.sql     # (opcional) Script para resetar senha do MySQL
 
-🎯 Objetivo do Projeto
+## 🎯 Objetivo do Projeto
 
 Este projeto foi desenvolvido para demonstrar:
 
